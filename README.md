@@ -1,6 +1,8 @@
-# InvestorRiskReturnProfiling
+# FIM
 
 This application was generated using JHipster 8.6.0, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v8.6.0](https://www.jhipster.tech/documentation-archive/v8.6.0).
+
+This is a "microservice" application intended to be part of a microservice architecture, please refer to the [Doing microservices with JHipster][] page of the documentation for more information.
 
 ## Project Structure
 
@@ -84,11 +86,42 @@ Note: There are still a few other things remaining to do for Leaflet that we won
 
 For further instructions on how to develop with JHipster, have a look at [Using JHipster in development][].
 
+### Developing Microfrontend
+
+Microservices doesn't contain every required backend feature to allow microfrontends to run alone.
+You must start a pre-built gateway version or from source.
+
+Start gateway from source:
+
+```
+cd gateway
+./npmw run docker:db:up # start database if necessary
+./npmw run docker:others:up # start service discovery and authentication service if necessary
+./npmw run app:start # alias for ./(mvnw|gradlew)
+```
+
+Microfrontend's `build-watch` script is configured to watch and compile microfrontend's sources and synchronizes with gateway's frontend.
+Start it using:
+
+```
+cd microfrontend
+./npmw run docker:db:up # start database if necessary
+./npmw run build-watch
+```
+
+It's possible to run microfrontend's frontend standalone using:
+
+```
+cd microfrontend
+./npmw run docker:db:up # start database if necessary
+./npmw watch # alias for `npm start` and `npm run backend:start` in parallel
+```
+
 ## Building for production
 
 ### Packaging as jar
 
-To build the final jar and optimize the InvestorRiskReturnProfiling application for production, run:
+To build the final jar and optimize the FIM application for production, run:
 
 ```
 ./mvnw -Pprod clean verify
@@ -178,16 +211,16 @@ For more information, refer to the [Code quality page][].
 
 You can use Docker to improve your JHipster development experience. A number of docker-compose configuration are available in the [src/main/docker](src/main/docker) folder to launch required third party services.
 
-For example, to start a postgresql database in a docker container, run:
+For example, to start a mssql database in a docker container, run:
 
 ```
-docker compose -f src/main/docker/postgresql.yml up -d
+docker compose -f src/main/docker/mssql.yml up -d
 ```
 
 To stop it and remove the container, run:
 
 ```
-docker compose -f src/main/docker/postgresql.yml down
+docker compose -f src/main/docker/mssql.yml down
 ```
 
 You can also fully dockerize your application and all the services that it depends on.
@@ -219,6 +252,7 @@ To configure CI for your project, run the ci-cd sub-generator (`jhipster ci-cd`)
 
 [JHipster Homepage and latest documentation]: https://www.jhipster.tech
 [JHipster 8.6.0 archive]: https://www.jhipster.tech/documentation-archive/v8.6.0
+[Doing microservices with JHipster]: https://www.jhipster.tech/documentation-archive/v8.6.0/microservices-architecture/
 [Using JHipster in development]: https://www.jhipster.tech/documentation-archive/v8.6.0/development/
 [Using Docker and Docker-Compose]: https://www.jhipster.tech/documentation-archive/v8.6.0/docker-compose
 [Using JHipster in production]: https://www.jhipster.tech/documentation-archive/v8.6.0/production/

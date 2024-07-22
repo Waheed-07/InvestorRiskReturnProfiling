@@ -110,18 +110,6 @@ module.exports = async options => {
         new ForkTsCheckerWebpackPlugin(),
         new CopyWebpackPlugin({
           patterns: [
-            {
-              // https://github.com/swagger-api/swagger-ui/blob/v4.6.1/swagger-ui-dist-package/README.md
-              context: require('swagger-ui-dist').getAbsoluteFSPath(),
-              from: '*.{js,css,html,png}',
-              to: 'swagger-ui/',
-              globOptions: { ignore: ['**/index.html'] },
-            },
-            {
-              from: path.join(path.dirname(require.resolve('axios/package.json')), 'dist/axios.min.js'),
-              to: 'swagger-ui/',
-            },
-            { from: './src/main/webapp/swagger-ui/', to: 'swagger-ui/' },
             { from: './src/main/webapp/content/', to: 'content/' },
             { from: './src/main/webapp/favicon.ico', to: 'favicon.ico' },
             { from: './src/main/webapp/manifest.webapp', to: 'manifest.webapp' },
@@ -146,6 +134,7 @@ module.exports = async options => {
         }),
       ],
     },
+    require('./webpack.microfrontend')({ serve: options.env.WEBPACK_SERVE }),
     // jhipster-needle-add-webpack-config - JHipster will add custom config
   );
 };

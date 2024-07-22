@@ -1,0 +1,33 @@
+{
+  "fimApp": {
+    "fimFimCustHistory": {
+      "home": {
+        "title": "Fim Cust Histories",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Maak een nieuwe Fim Cust History",
+        "createOrEditLabel": "Maak of wijzig een Fim Cust History",
+        "notFound": "No Fim Cust Histories found"
+      },
+      "created": "A new Fim Cust History is created with identifier {{ param }}",
+      "updated": "A Fim Cust History is updated with identifier {{ param }}",
+      "deleted": "A Fim Cust History is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u Fim Cust History {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "Fim Cust History"
+      },
+      "id": "ID",
+      "custId": "Cust Id",
+      "historyTs": "History Ts",
+      "clientId": "Client Id",
+      "idType": "Id Type",
+      "ctryCode": "Ctry Code",
+      "createdBy": "Created By",
+      "createdTs": "Created Ts",
+      "updatedBy": "Updated By",
+      "updatedTs": "Updated Ts",
+      "recordStatus": "Record Status"
+    }
+  }
+}

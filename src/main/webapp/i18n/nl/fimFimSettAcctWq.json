@@ -1,0 +1,34 @@
+{
+  "fimApp": {
+    "fimFimSettAcctWq": {
+      "home": {
+        "title": "Fim Sett Acct Wqs",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Maak een nieuwe Fim Sett Acct Wq",
+        "createOrEditLabel": "Maak of wijzig een Fim Sett Acct Wq",
+        "notFound": "No Fim Sett Acct Wqs found"
+      },
+      "created": "A new Fim Sett Acct Wq is created with identifier {{ param }}",
+      "updated": "A Fim Sett Acct Wq is updated with identifier {{ param }}",
+      "deleted": "A Fim Sett Acct Wq is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u Fim Sett Acct Wq {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "Fim Sett Acct Wq"
+      },
+      "id": "ID",
+      "settaccId": "Settacc Id",
+      "accountId": "Account Id",
+      "settAcctNbr": "Sett Acct Nbr",
+      "settCcy": "Sett Ccy",
+      "settAcctStatus": "Sett Acct Status",
+      "createdBy": "Created By",
+      "createdTs": "Created Ts",
+      "updatedBy": "Updated By",
+      "updatedTs": "Updated Ts",
+      "recordStatus": "Record Status",
+      "uploadRemark": "Upload Remark"
+    }
+  }
+}

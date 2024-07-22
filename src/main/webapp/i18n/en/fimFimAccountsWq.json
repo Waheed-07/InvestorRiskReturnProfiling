@@ -1,0 +1,43 @@
+{
+  "fimApp": {
+    "fimFimAccountsWq": {
+      "home": {
+        "title": "Fim Accounts Wqs",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Fim Accounts Wq",
+        "createOrEditLabel": "Create or edit a Fim Accounts Wq",
+        "notFound": "No Fim Accounts Wqs found"
+      },
+      "created": "A new Fim Accounts Wq is created with identifier {{ param }}",
+      "updated": "A Fim Accounts Wq is updated with identifier {{ param }}",
+      "deleted": "A Fim Accounts Wq is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Fim Accounts Wq {{ id }}?"
+      },
+      "detail": {
+        "title": "Fim Accounts Wq"
+      },
+      "id": "ID",
+      "accountId": "Account Id",
+      "custId": "Cust Id",
+      "relnId": "Reln Id",
+      "relnType": "Reln Type",
+      "operInst": "Oper Inst",
+      "isAcctNbr": "Is Acct Nbr",
+      "bndAcctNbr": "Bnd Acct Nbr",
+      "closingId": "Closing Id",
+      "subSegment": "Sub Segment",
+      "branchCode": "Branch Code",
+      "acctStatus": "Acct Status",
+      "ctryCode": "Ctry Code",
+      "acctOwners": "Acct Owners",
+      "remarks": "Remarks",
+      "createdBy": "Created By",
+      "createdTs": "Created Ts",
+      "updatedBy": "Updated By",
+      "updatedTs": "Updated Ts",
+      "recordStatus": "Record Status",
+      "uploadRemark": "Upload Remark"
+    }
+  }
+}
