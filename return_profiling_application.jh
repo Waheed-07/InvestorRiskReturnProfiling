@@ -10,68 +10,68 @@ application {
   entities *
 }
 entity PersonalDetails{
-    fullName String required
-    dateOfBirth Instant required
-    comments TextBlob
-    createdAt Instant required
-    updatedAt Instant
+    FullName String required
+    FateOfBirth Instant required
+    Comments TextBlob
+    CreatedAt Instant required
+    UpdatedAt Instant
 }
 entity Country{
-    name String   
+    Name String   
 }
 
 entity FinancialInformation{
-	annualIncome Double required
-    netWorth Double required
-    currentSavings Double 
-  investmentExperience String required
-  sourceOfFunds String required
-  createdAt Instant required
-  updatedAt Instant
+	AnnualIncome Double required
+    NetWorth Double required
+    CurrentSavings Double 
+  InvestmentExperience String required
+  SourceOfFunds String required
+  CreatedAt Instant required
+  UpdatedAt Instant
 }
 
 entity Profession{
-	name String
-    conceptUri String
-    iscoGroup String
-    description TextBlob
+	Name String
+    ConceptUri String
+    IscoGroup String
+    Description TextBlob
 }
 entity Country{
-    name String
-    isoCode String
+    Name String
+    IsoCode String
 }
 entity Address{
-    addressLineOne String
-    addressLineTwo String
-    postalCode String
-    city String
-    region String
-    countryCode String
+    AddressLineOne String
+    AddressLineTwo String
+    PostalCode String
+    City String
+    Region String
+    CountryCode String
 }
 entity Currency {
-    name String
-    code String
+    Name String
+    Code String
 }
 entity Contact{
-    contact String
+    Contact String
 }
 entity Questions{
-  questionText String required
-  questionType String required
-  createdAt Instant required
+  QuestionText String required
+  QuestionType String required
+  CreatedAt Instant required
 }
 entity UserResponses{
-  questionID Number
-  responseText String required
-  responseDate Instant required
+  QuestionID Number
+  ResponseText String required
+  ResponseDate Instant required
 }
 entity Options{
- 	optionText String required
+ 	OptionText String required
 }
 
 relationship ManyToOne{
-PersonalDetails{person(name)} to Contact
-Questions{questions(questions)} to Options
+PersonalDetails{person(Name)} to Contact
+Questions{questions(Questions)} to Options
 
 }
 
