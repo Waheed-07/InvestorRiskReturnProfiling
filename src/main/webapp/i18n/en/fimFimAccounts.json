@@ -1,0 +1,42 @@
+{
+  "fimApp": {
+    "fimFimAccounts": {
+      "home": {
+        "title": "Fim Accounts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Fim Accounts",
+        "createOrEditLabel": "Create or edit a Fim Accounts",
+        "notFound": "No Fim Accounts found"
+      },
+      "created": "A new Fim Accounts is created with identifier {{ param }}",
+      "updated": "A Fim Accounts is updated with identifier {{ param }}",
+      "deleted": "A Fim Accounts is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Fim Accounts {{ id }}?"
+      },
+      "detail": {
+        "title": "Fim Accounts"
+      },
+      "id": "ID",
+      "accountId": "Account Id",
+      "custId": "Cust Id",
+      "relnId": "Reln Id",
+      "relnType": "Reln Type",
+      "operInst": "Oper Inst",
+      "isAcctNbr": "Is Acct Nbr",
+      "bndAcctNbr": "Bnd Acct Nbr",
+      "closingId": "Closing Id",
+      "subSegment": "Sub Segment",
+      "branchCode": "Branch Code",
+      "acctStatus": "Acct Status",
+      "ctryCode": "Ctry Code",
+      "acctOwners": "Acct Owners",
+      "remarks": "Remarks",
+      "createdBy": "Created By",
+      "createdTs": "Created Ts",
+      "updatedBy": "Updated By",
+      "updatedTs": "Updated Ts",
+      "recordStatus": "Record Status"
+    }
+  }
+}

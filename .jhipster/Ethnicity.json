@@ -1,0 +1,25 @@
+{
+  "annotations": {
+    "changelogDate": "20240722175246"
+  },
+  "applications": ["FIM"],
+  "clientRootFolder": "FIM",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "urduName",
+      "fieldType": "String"
+    }
+  ],
+  "microserviceName": "FIM",
+  "name": "Ethnicity",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

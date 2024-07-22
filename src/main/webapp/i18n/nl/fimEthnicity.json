@@ -1,0 +1,25 @@
+{
+  "fimApp": {
+    "fimEthnicity": {
+      "home": {
+        "title": "Ethnicities",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Maak een nieuwe Ethnicity",
+        "createOrEditLabel": "Maak of wijzig een Ethnicity",
+        "notFound": "No Ethnicities found"
+      },
+      "created": "A new Ethnicity is created with identifier {{ param }}",
+      "updated": "A Ethnicity is updated with identifier {{ param }}",
+      "deleted": "A Ethnicity is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u Ethnicity {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "Ethnicity"
+      },
+      "id": "ID",
+      "name": "Name",
+      "urduName": "Urdu Name"
+    }
+  }
+}

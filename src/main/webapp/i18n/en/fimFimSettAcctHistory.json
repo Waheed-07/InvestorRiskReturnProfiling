@@ -1,0 +1,34 @@
+{
+  "fimApp": {
+    "fimFimSettAcctHistory": {
+      "home": {
+        "title": "Fim Sett Acct Histories",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Fim Sett Acct History",
+        "createOrEditLabel": "Create or edit a Fim Sett Acct History",
+        "notFound": "No Fim Sett Acct Histories found"
+      },
+      "created": "A new Fim Sett Acct History is created with identifier {{ param }}",
+      "updated": "A Fim Sett Acct History is updated with identifier {{ param }}",
+      "deleted": "A Fim Sett Acct History is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Fim Sett Acct History {{ id }}?"
+      },
+      "detail": {
+        "title": "Fim Sett Acct History"
+      },
+      "id": "ID",
+      "settaccId": "Settacc Id",
+      "historyTs": "History Ts",
+      "accountId": "Account Id",
+      "settAcctNbr": "Sett Acct Nbr",
+      "settCcy": "Sett Ccy",
+      "settAcctStatus": "Sett Acct Status",
+      "createdBy": "Created By",
+      "createdTs": "Created Ts",
+      "updatedBy": "Updated By",
+      "updatedTs": "Updated Ts",
+      "recordStatus": "Record Status"
+    }
+  }
+}
