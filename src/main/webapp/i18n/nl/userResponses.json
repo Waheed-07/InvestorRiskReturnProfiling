@@ -1,0 +1,25 @@
+{
+  "myApp": {
+    "userResponses": {
+      "home": {
+        "title": "User Responses",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Maak een nieuwe User Responses",
+        "createOrEditLabel": "Maak of wijzig een User Responses",
+        "notFound": "No User Responses found"
+      },
+      "created": "A new User Responses is created with identifier {{ param }}",
+      "updated": "A User Responses is updated with identifier {{ param }}",
+      "deleted": "A User Responses is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u User Responses {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "User Responses"
+      },
+      "id": "ID",
+      "responseText": "Response Text",
+      "responseDate": "Response Date"
+    }
+  }
+}

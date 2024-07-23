@@ -1,0 +1,25 @@
+{
+  "myApp": {
+    "currency": {
+      "home": {
+        "title": "Currencies",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Maak een nieuwe Currency",
+        "createOrEditLabel": "Maak of wijzig een Currency",
+        "notFound": "No Currencies found"
+      },
+      "created": "A new Currency is created with identifier {{ param }}",
+      "updated": "A Currency is updated with identifier {{ param }}",
+      "deleted": "A Currency is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u Currency {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "Currency"
+      },
+      "id": "ID",
+      "name": "Name",
+      "code": "Code"
+    }
+  }
+}

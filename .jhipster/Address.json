@@ -1,0 +1,33 @@
+{
+  "annotations": {
+    "changelogDate": "20240723094451"
+  },
+  "applications": ["myApp"],
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "addressLineOne",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "addressLineTwo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "postalCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "city",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "region",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Address",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

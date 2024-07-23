@@ -1,0 +1,30 @@
+{
+  "annotations": {
+    "changelogDate": "20240723094450"
+  },
+  "applications": ["myApp"],
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "conceptUri",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "iscoGroup",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    }
+  ],
+  "name": "Profession",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

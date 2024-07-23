@@ -1,0 +1,30 @@
+{
+  "myApp": {
+    "financialDetails": {
+      "home": {
+        "title": "Financial Details",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Maak een nieuwe Financial Details",
+        "createOrEditLabel": "Maak of wijzig een Financial Details",
+        "notFound": "No Financial Details found"
+      },
+      "created": "A new Financial Details is created with identifier {{ param }}",
+      "updated": "A Financial Details is updated with identifier {{ param }}",
+      "deleted": "A Financial Details is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u Financial Details {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "Financial Details"
+      },
+      "id": "ID",
+      "annualIncome": "Annual Income",
+      "netWorth": "Net Worth",
+      "currentSavings": "Current Savings",
+      "investmentExperience": "Investment Experience",
+      "sourceOfFunds": "Source Of Funds",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At"
+    }
+  }
+}
