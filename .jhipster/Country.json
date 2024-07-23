@@ -1,0 +1,17 @@
+{
+  "annotations": {
+    "changelogDate": "20240723092912"
+  },
+  "applications": ["myApp"],
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Country",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}
