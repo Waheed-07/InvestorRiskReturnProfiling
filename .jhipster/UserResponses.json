@@ -1,0 +1,23 @@
+{
+  "annotations": {
+    "changelogDate": "20240723094455"
+  },
+  "applications": ["myApp"],
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "responseText",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "responseDate",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "UserResponses",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

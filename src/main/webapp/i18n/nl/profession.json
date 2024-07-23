@@ -1,0 +1,27 @@
+{
+  "myApp": {
+    "profession": {
+      "home": {
+        "title": "Professions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Maak een nieuwe Profession",
+        "createOrEditLabel": "Maak of wijzig een Profession",
+        "notFound": "No Professions found"
+      },
+      "created": "A new Profession is created with identifier {{ param }}",
+      "updated": "A Profession is updated with identifier {{ param }}",
+      "deleted": "A Profession is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u Profession {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "Profession"
+      },
+      "id": "ID",
+      "name": "Name",
+      "conceptUri": "Concept Uri",
+      "iscoGroup": "Isco Group",
+      "description": "Description"
+    }
+  }
+}

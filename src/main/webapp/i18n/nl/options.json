@@ -1,0 +1,24 @@
+{
+  "myApp": {
+    "options": {
+      "home": {
+        "title": "Options",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Maak een nieuwe Options",
+        "createOrEditLabel": "Maak of wijzig een Options",
+        "notFound": "No Options found"
+      },
+      "created": "A new Options is created with identifier {{ param }}",
+      "updated": "A Options is updated with identifier {{ param }}",
+      "deleted": "A Options is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u Options {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "Options"
+      },
+      "id": "ID",
+      "optionText": "Option Text"
+    }
+  }
+}

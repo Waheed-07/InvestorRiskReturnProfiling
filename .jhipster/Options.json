@@ -1,0 +1,18 @@
+{
+  "annotations": {
+    "changelogDate": "20240723094456"
+  },
+  "applications": ["myApp"],
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "optionText",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "Options",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}
