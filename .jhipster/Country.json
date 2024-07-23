@@ -1,0 +1,15 @@
+{
+  "annotations": {
+    "changelogDate": "20240723092451"
+  },
+  "applications": ["myApp"],
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Country",
+  "relationships": [],
+  "searchEngine": "no"
+}
