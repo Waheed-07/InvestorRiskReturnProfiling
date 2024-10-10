@@ -1,6 +1,8 @@
-# InvestorRiskReturnProfiling
+# SimpleRishta
 
-This application was generated using JHipster 8.6.0, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v8.6.0](https://www.jhipster.tech/documentation-archive/v8.6.0).
+This application was generated using JHipster 8.7.1, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v8.7.1](https://www.jhipster.tech/documentation-archive/v8.7.1).
+
+This is a "microservice" application intended to be part of a microservice architecture, please refer to the [Doing microservices with JHipster][] page of the documentation for more information.
 
 ## Project Structure
 
@@ -84,11 +86,42 @@ Note: There are still a few other things remaining to do for Leaflet that we won
 
 For further instructions on how to develop with JHipster, have a look at [Using JHipster in development][].
 
+### Developing Microfrontend
+
+Microservices doesn't contain every required backend feature to allow microfrontends to run alone.
+You must start a pre-built gateway version or from source.
+
+Start gateway from source:
+
+```
+cd gateway
+./npmw run docker:db:up # start database if necessary
+./npmw run docker:others:up # start service discovery and authentication service if necessary
+./npmw run app:start # alias for ./(mvnw|gradlew)
+```
+
+Microfrontend's `build-watch` script is configured to watch and compile microfrontend's sources and synchronizes with gateway's frontend.
+Start it using:
+
+```
+cd microfrontend
+./npmw run docker:db:up # start database if necessary
+./npmw run build-watch
+```
+
+It's possible to run microfrontend's frontend standalone using:
+
+```
+cd microfrontend
+./npmw run docker:db:up # start database if necessary
+./npmw watch # alias for `npm start` and `npm run backend:start` in parallel
+```
+
 ## Building for production
 
 ### Packaging as jar
 
-To build the final jar and optimize the InvestorRiskReturnProfiling application for production, run:
+To build the final jar and optimize the SimpleRishta application for production, run:
 
 ```
 ./mvnw -Pprod clean verify
@@ -218,13 +251,14 @@ For more information refer to [Using Docker and Docker-Compose][], this page als
 To configure CI for your project, run the ci-cd sub-generator (`jhipster ci-cd`), this will let you generate configuration files for a number of Continuous Integration systems. Consult the [Setting up Continuous Integration][] page for more information.
 
 [JHipster Homepage and latest documentation]: https://www.jhipster.tech
-[JHipster 8.6.0 archive]: https://www.jhipster.tech/documentation-archive/v8.6.0
-[Using JHipster in development]: https://www.jhipster.tech/documentation-archive/v8.6.0/development/
-[Using Docker and Docker-Compose]: https://www.jhipster.tech/documentation-archive/v8.6.0/docker-compose
-[Using JHipster in production]: https://www.jhipster.tech/documentation-archive/v8.6.0/production/
-[Running tests page]: https://www.jhipster.tech/documentation-archive/v8.6.0/running-tests/
-[Code quality page]: https://www.jhipster.tech/documentation-archive/v8.6.0/code-quality/
-[Setting up Continuous Integration]: https://www.jhipster.tech/documentation-archive/v8.6.0/setting-up-ci/
+[JHipster 8.7.1 archive]: https://www.jhipster.tech/documentation-archive/v8.7.1
+[Doing microservices with JHipster]: https://www.jhipster.tech/documentation-archive/v8.7.1/microservices-architecture/
+[Using JHipster in development]: https://www.jhipster.tech/documentation-archive/v8.7.1/development/
+[Using Docker and Docker-Compose]: https://www.jhipster.tech/documentation-archive/v8.7.1/docker-compose
+[Using JHipster in production]: https://www.jhipster.tech/documentation-archive/v8.7.1/production/
+[Running tests page]: https://www.jhipster.tech/documentation-archive/v8.7.1/running-tests/
+[Code quality page]: https://www.jhipster.tech/documentation-archive/v8.7.1/code-quality/
+[Setting up Continuous Integration]: https://www.jhipster.tech/documentation-archive/v8.7.1/setting-up-ci/
 [Node.js]: https://nodejs.org/
 [NPM]: https://www.npmjs.com/
 [Webpack]: https://webpack.github.io/

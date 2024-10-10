@@ -1,0 +1,36 @@
+{
+  "annotations": {
+    "changelogDate": "20241010182529"
+  },
+  "applications": ["SimpleRishta"],
+  "clientRootFolder": "SimpleRishta",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "attributeName",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "200"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "100"
+    },
+    {
+      "fieldName": "verifiedAt",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "verifiedBy",
+      "fieldType": "String"
+    }
+  ],
+  "microserviceName": "SimpleRishta",
+  "name": "ProfileVerificationStatus",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

@@ -1,13 +1,17 @@
 {
   "global": {
-    "title": "InvestorRiskReturnProfiling",
+    "title": "SimpleRishta",
     "browsehappy": "U gebruikt een <strong>verouderde</strong> browser. <a href=\"http://browsehappy.com/?locale=en\">upgrade uw browser</a> om de bruikbaarheid te verbeteren.",
     "menu": {
       "home": "Startpagina",
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entiteiten",
-        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
+        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)",
+        "simpleRishtaVerifiableAttributes": "Verifiable Attributes",
+        "simpleRishtaUserVerificationAttributes": "User Verification Attributes",
+        "simpleRishtaApplicationConfigurations": "Application Configurations",
+        "simpleRishtaProfileVerificationStatus": "Profile Verification Status"
       },
       "account": {
         "main": "Gebruiker",

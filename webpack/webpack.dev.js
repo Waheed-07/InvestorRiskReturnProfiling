@@ -1,4 +1,3 @@
-const webpack = require('webpack');
 const webpackMerge = require('webpack-merge').merge;
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const SimpleProgressWebpackPlugin = require('simple-progress-webpack-plugin');
@@ -15,7 +14,7 @@ module.exports = async options =>
   webpackMerge(await commonConfig({ env: ENV }), {
     devtool: 'cheap-module-source-map', // https://reactjs.org/docs/cross-origin-errors.html
     mode: ENV,
-    entry: ['./src/main/webapp/app/index'],
+    entry: ['./src/main/webapp/app/main'],
     output: {
       path: utils.root('target/classes/static/'),
       filename: '[name].[contenthash:8].js',
@@ -46,7 +45,7 @@ module.exports = async options =>
       ],
     },
     devServer: {
-      hot: true,
+      hot: false,
       static: {
         directory: './target/classes/static/',
       },
@@ -98,7 +97,7 @@ module.exports = async options =>
         },
       ),
       new WebpackNotifierPlugin({
-        title: 'Investor Risk Return Profiling',
+        title: 'Simple Rishta',
         contentImage: path.join(__dirname, 'logo-jhipster.png'),
       }),
     ].filter(Boolean),

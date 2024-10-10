@@ -1,3 +1,4 @@
 org.springframework.test.context.ContextCustomizerFactory = com.\
     investorriskreturnprofiling.aml.config.\
+    SqlTestContainersSpringContextCustomizerFactory,com.simplerishta.cms.config.\
     SqlTestContainersSpringContextCustomizerFactory
