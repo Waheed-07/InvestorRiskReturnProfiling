@@ -1,0 +1,30 @@
+{
+  "simpleRishtaApp": {
+    "simpleRishtaUserVerificationAttributes": {
+      "home": {
+        "title": "User Verification Attributes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Maak een nieuwe User Verification Attributes",
+        "createOrEditLabel": "Maak of wijzig een User Verification Attributes",
+        "notFound": "No User Verification Attributes found"
+      },
+      "created": "A new User Verification Attributes is created with identifier {{ param }}",
+      "updated": "A User Verification Attributes is updated with identifier {{ param }}",
+      "deleted": "A User Verification Attributes is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u User Verification Attributes {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "User Verification Attributes"
+      },
+      "id": "ID",
+      "documentType": "Document Type",
+      "documentUrl": "Document Url",
+      "status": "Status",
+      "verificationToken": "Verification Token",
+      "lastActionDate": "Last Action Date",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At"
+    }
+  }
+}

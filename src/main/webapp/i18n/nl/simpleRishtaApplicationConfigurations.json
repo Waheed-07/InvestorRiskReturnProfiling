@@ -1,0 +1,27 @@
+{
+  "simpleRishtaApp": {
+    "simpleRishtaApplicationConfigurations": {
+      "home": {
+        "title": "Application Configurations",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Maak een nieuwe Application Configurations",
+        "createOrEditLabel": "Maak of wijzig een Application Configurations",
+        "notFound": "No Application Configurations found"
+      },
+      "created": "A new Application Configurations is created with identifier {{ param }}",
+      "updated": "A Application Configurations is updated with identifier {{ param }}",
+      "deleted": "A Application Configurations is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u Application Configurations {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "Application Configurations"
+      },
+      "id": "ID",
+      "configKey": "Config Key",
+      "configValue": "Config Value",
+      "description": "Description",
+      "countryCode": "Country Code"
+    }
+  }
+}

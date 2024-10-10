@@ -1,0 +1,27 @@
+{
+  "simpleRishtaApp": {
+    "simpleRishtaProfileVerificationStatus": {
+      "home": {
+        "title": "Profile Verification Statuses",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Maak een nieuwe Profile Verification Status",
+        "createOrEditLabel": "Maak of wijzig een Profile Verification Status",
+        "notFound": "No Profile Verification Statuses found"
+      },
+      "created": "A new Profile Verification Status is created with identifier {{ param }}",
+      "updated": "A Profile Verification Status is updated with identifier {{ param }}",
+      "deleted": "A Profile Verification Status is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u Profile Verification Status {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "Profile Verification Status"
+      },
+      "id": "ID",
+      "attributeName": "Attribute Name",
+      "status": "Status",
+      "verifiedAt": "Verified At",
+      "verifiedBy": "Verified By"
+    }
+  }
+}

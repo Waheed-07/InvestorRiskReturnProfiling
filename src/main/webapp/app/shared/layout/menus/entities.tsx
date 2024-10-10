@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { translate } from 'react-jhipster';
 import { NavDropdown } from './menu-components';
-import EntitiesMenuItems from 'app/entities/menu';
+
+const EntitiesMenuItems = React.lazy(() => import('app/entities/menu').catch(() => import('app/shared/error/error-loading')));
 
 export const EntitiesMenu = () => (
   <NavDropdown
@@ -11,6 +12,8 @@ export const EntitiesMenu = () => (
     data-cy="entity"
     style={{ maxHeight: '80vh', overflow: 'auto' }}
   >
-    <EntitiesMenuItems />
+    <Suspense fallback={<div>loading...</div>}>
+      <EntitiesMenuItems />
+    </Suspense>
   </NavDropdown>
 );
