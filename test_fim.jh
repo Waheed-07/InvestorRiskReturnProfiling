@@ -1,0 +1,167 @@
+application {
+  config {
+    baseName FIM,
+    applicationType microservice,
+    packageName com.scb.fimob,
+    authenticationType jwt,
+    prodDatabaseType mssql,    
+     buildTool maven
+  }
+  entities *
+}
+entity FimAccounts{
+  AccountId String
+  CustId String maxlength(30) required
+  RelnId String maxlength(30) required
+  RelnType String maxlength(5) required
+  OperInst String maxlength(10) 
+  IsAcctNbr String maxlength(30) required
+  BndAcctNbr String maxlength(30) required
+  ClosingId String maxlength(10)
+  SubSegment String maxlength(10)
+  BranchCode String maxlength(10)
+  AcctStatus String maxlength(10) required
+  CtryCode String maxlength(3)
+  AcctOwners String maxlength(100)
+  Remarks String maxlength(200)
+  CreatedBy String maxlength(8)
+  CreatedTs Instant
+  UpdatedBy String maxlength(8)
+  UpdatedTs Instant
+  RecordStatus String maxlength(10)
+}
+entity FimAccountsWq{
+  AccountId String
+  CustId String maxlength(30) required
+  RelnId String maxlength(30) required
+  RelnType String maxlength(5) required
+  OperInst String maxlength(10) 
+  IsAcctNbr String maxlength(30) required
+  BndAcctNbr String maxlength(30) required
+  ClosingId String maxlength(10)
+  SubSegment String maxlength(10)
+  BranchCode String maxlength(10)
+  AcctStatus String maxlength(10) required
+  CtryCode String maxlength(3)
+  AcctOwners String maxlength(100)
+  Remarks String maxlength(200)
+  CreatedBy String maxlength(8)
+  CreatedTs Instant
+  UpdatedBy String maxlength(8)
+  UpdatedTs Instant
+  RecordStatus String maxlength(10)
+  UploadRemark String
+}
+
+entity FimAccountsHistory{
+  AccountId String
+  HistoryTs Instant
+  CustId String maxlength(30) required
+  RelnId String maxlength(30) required
+  RelnType String maxlength(5) required
+  OperInst String maxlength(10) 
+  IsAcctNbr String maxlength(30) required
+  BndAcctNbr String maxlength(30) required
+  ClosingId String maxlength(10)
+  SubSegment String maxlength(10)
+  BranchCode String maxlength(10)
+  AcctStatus String maxlength(10) required
+  CtryCode String maxlength(3)
+  AcctOwners String maxlength(100)
+  Remarks String maxlength(200)
+  CreatedBy String maxlength(8)
+  CreatedTs Instant
+  UpdatedBy String maxlength(8)
+  UpdatedTs Instant
+  RecordStatus String maxlength(10)
+}
+entity FimSettAcct{
+  SettaccId String
+  AccountId String maxlength(15) required
+  SettAcctNbr String maxlength(30) required
+  SettCcy String maxlength(3) required
+  SettAcctStatus String maxlength(10) required
+  CreatedBy String maxlength(8)
+  CreatedTs Instant
+  UpdatedBy String maxlength(8)
+  UpdatedTs Instant
+  RecordStatus String maxlength(10)
+}
+
+entity FimSettAcctWq{
+  SettaccId String
+  AccountId String maxlength(15) required
+  SettAcctNbr String maxlength(30) required
+  SettCcy String maxlength(3) required
+  SettAcctStatus String maxlength(10) required
+  CreatedBy String maxlength(8)
+  CreatedTs Instant
+  UpdatedBy String maxlength(8)
+  UpdatedTs Instant
+  RecordStatus String maxlength(10)
+  UploadRemark String
+}
+
+entity FimSettAcctHistory{
+  SettaccId String
+  HistoryTs Instant
+  AccountId String maxlength(15) required
+  SettAcctNbr String maxlength(30) required
+  SettCcy String maxlength(3) required
+  SettAcctStatus String maxlength(10) required
+  CreatedBy String maxlength(8)
+  CreatedTs Instant
+  UpdatedBy String maxlength(8)
+  UpdatedTs Instant
+  RecordStatus String maxlength(10)
+}
+entity FimCust{
+CustId String
+ClientId String maxlength(30) required
+IdType String maxlength(10) required
+CtryCode String maxlength(3) required
+CreatedBy String maxlength(8) required
+CreatedTs Instant
+UpdatedBy String maxlength(8)
+UpdatedTs Instant
+RecordStatus String
+UploadRemark String
+}
+
+entity FimCustWq{
+CustId String
+ClientId String maxlength(30) required
+IdType String maxlength(10) required
+CtryCode String maxlength(3) required
+CreatedBy String maxlength(8) required
+CreatedTs Instant
+UpdatedBy String maxlength(8)
+UpdatedTs Instant
+RecordStatus String
+UploadRemark String
+}
+entity FimCustHistory{
+CustId String
+HistoryTs Instant
+ClientId String maxlength(30) required
+IdType String maxlength(10) required
+CtryCode String maxlength(3) required
+CreatedBy String maxlength(8) required
+CreatedTs Instant
+UpdatedBy String maxlength(8)
+UpdatedTs Instant
+RecordStatus String
+}
+entity Ethnicity{
+Name String required
+UrduName String 
+}
+
+
+
+
+service * with serviceClass
+dto all with mapstruct
+
+paginate FimCust,FimSettAcct with pagination
+    

@@ -1,13 +1,23 @@
 {
   "global": {
-    "title": "InvestorRiskReturnProfiling",
+    "title": "FIM",
     "browsehappy": "You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/?locale=en\">upgrade your browser</a> to improve your experience.",
     "menu": {
       "home": "Home",
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entities",
-        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
+        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)",
+        "fimFimAccounts": "Fim Accounts",
+        "fimFimAccountsWq": "Fim Accounts Wq",
+        "fimFimAccountsHistory": "Fim Accounts History",
+        "fimFimSettAcct": "Fim Sett Acct",
+        "fimFimSettAcctWq": "Fim Sett Acct Wq",
+        "fimFimSettAcctHistory": "Fim Sett Acct History",
+        "fimFimCust": "Fim Cust",
+        "fimFimCustWq": "Fim Cust Wq",
+        "fimFimCustHistory": "Fim Cust History",
+        "fimEthnicity": "Ethnicity"
       },
       "account": {
         "main": "Account",
