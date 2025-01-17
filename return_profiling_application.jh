@@ -15,6 +15,9 @@ entity PersonalDetails{
     Comments TextBlob
     CreatedAt Instant required
     UpdatedAt Instant
+    EmailAddress String
+    PhoneNumber String
+    Employer String
 }
 entity Country{
     Name String   
